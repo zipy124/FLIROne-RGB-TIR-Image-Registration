@@ -64,8 +64,7 @@ def stitch(rgb,thermal,grayscale=True):
     return new_im
 
 if __name__ =="__main__":
-    rgb, thermal = extract_and_register(
-        "/home/zmorgan/Documents/TIPA_test/TIPA/flir_20200313T130245.jpg")
+    rgb, thermal = extract_and_register("Path to your image here.jpg")
     
     thermal = optimal_quantization(thermal)
     
